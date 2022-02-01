@@ -31,11 +31,15 @@
 }
 #mid{
     @include flex-row;
+    justify-content: space-between;
     @include margins;
     background-repeat: no-repeat;
     #bienvenidos{
-        background-color: $complement;
         margin-left: 10%;
+        background-color: lighten($principal,5%);
+      
+        
+        width: 25vw;
         h1{
             font-family: "gsans";
         }
@@ -44,11 +48,17 @@
             font-size: large;
         }
     }
+    figure{
+        margin-right: 10%;
+       img{
+        width:20vw;
+       }
+    }
 }
 #destacados{
     @include flex-row;
     justify-content: flex-end;
-    background-color: lighten($principal,5%);
+    background-color: $complement;
     
 }
 .producto{

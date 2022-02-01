@@ -19,7 +19,7 @@ body {
 main {
   grid-area: main;
   display: grid;
-  grid-template-areas: ". top top top ." "center center center . . " ". bottom bottom bottom . ";
+  grid-template-areas: ". top top top ." "center center center center center " ". bottom bottom bottom . ";
   grid-template-columns: repeat(5, 20%);
 }
 
@@ -52,22 +52,12 @@ footer {
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   font-family: "kiona";
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-evenly;
+  align-content: center;
+  align-items: center;
   font-size: large;
 }
 
@@ -123,8 +113,7 @@ span {
 }
 #top button {
   margin-left: 5%;
-  -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   border-radius: 10%;
   font-family: "gsans";
   font-size: large;
@@ -132,20 +121,17 @@ span {
 }
 
 #mid {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
   margin-top: 5%;
   margin-bottom: 5%;
   background-repeat: no-repeat;
 }
 #mid #bienvenidos {
-  background-color: #1897b2;
   margin-left: 10%;
+  background-color: #ea7b63;
+  width: 25vw;
 }
 #mid #bienvenidos h1 {
   font-family: "gsans";
@@ -154,36 +140,28 @@ span {
   font-family: "quicksand";
   font-size: large;
 }
+#mid figure {
+  margin-right: 10%;
+}
+#mid figure img {
+  width: 20vw;
+}
 
 #destacados {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  background-color: #ea7b63;
+  flex-direction: row;
+  justify-content: flex-end;
+  background-color: #1897b2;
 }
 
 .producto {
   border: solid 1px black;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-line-pack: center;
-      align-content: center;
+  flex-direction: column;
+  align-content: center;
 }
 .producto figure {
-  -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   width: 70%;
   height: 60%;
 }
@@ -197,8 +175,7 @@ span {
   text-align: center;
 }
 .producto button {
-  -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   width: 50%;
   height: 20%;
   border-radius: 10%;
@@ -214,40 +191,21 @@ section > h2 {
   margin-top: 5%;
   margin-bottom: 5%;
   font-family: "kiona";
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
 #fTop {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-evenly;
   text-align: left;
   background-color: #e7684d;
 }
 
 #fBot {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  justify-content: center;
   background-color: #e55d40;
 }/*# sourceMappingURL=styles.css.map */
