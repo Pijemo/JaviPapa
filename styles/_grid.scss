@@ -12,7 +12,7 @@ main {
     
    
     grid-template-areas: '. top top top .'
-        'center center center . . '
+        'center center center center center '
         '. bottom bottom bottom . ';
     
     grid-template-columns: repeat(5, 20%);
