@@ -100,6 +100,7 @@ span {
 }
 #top div {
   margin-left: 5%;
+  margin-top: 5%;
 }
 #top div h2 {
   color: black;
@@ -118,6 +119,8 @@ span {
   font-family: "gsans";
   font-size: large;
   background-color: #1897b2;
+  width: 10%;
+  height: 10%;
 }
 
 #mid {
@@ -140,17 +143,15 @@ span {
   font-family: "quicksand";
   font-size: large;
 }
-#mid figure {
+
+#carouselExampleControls {
   margin-right: 10%;
-}
-#mid figure img {
-  width: 20vw;
 }
 
 #destacados {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-evenly;
   background-color: #1897b2;
 }
 
@@ -158,6 +159,7 @@ span {
   border: solid 1px black;
   display: flex;
   flex-direction: column;
+  flex-basis: 33%;
   align-content: center;
 }
 .producto figure {
@@ -166,11 +168,11 @@ span {
   height: 60%;
 }
 .producto figure img {
+  margin-top: 10%;
   width: 12vw;
   height: 50%;
 }
 .producto figure figcaption {
-  margin-top: 5%;
   font-size: x-large;
   text-align: center;
 }

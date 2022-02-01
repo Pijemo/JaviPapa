@@ -9,8 +9,9 @@
     background-size: cover;
     div{
         margin-left: 5%;
+        margin-top: 5%;
         h2{
-            color: black;
+            color: darken($complement,90%);
             font-family: "kiona";
             font-size: x-large;
         }
@@ -27,6 +28,8 @@
         font-family: "gsans";
         font-size: large;
         background-color: $complement;
+        width: 10%;
+        height: 10%;
     }
 }
 #mid{
@@ -48,40 +51,40 @@
             font-size: large;
         }
     }
-    figure{
-        margin-right: 10%;
-       img{
-        width:20vw;
-       }
-    }
+    
+}
+#carouselExampleControls{
+    margin-right: 10%;
+   
 }
 #destacados{
     @include flex-row;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     background-color: $complement;
     
 }
 .producto{
     border: solid 1px black;
     @include flex-column;
-    
+    flex-basis: 33%;
     align-content: center;
     figure{
         align-self: center;
        width: 70%;
        height: 60%;
         img{
-            
+            margin-top: 10%;
             width: 12vw;
             height: 50%;
         }
         figcaption{
-            margin-top: 5%;
+            
             font-size: x-large;
             text-align: center;
         }
     }
     button{
+        
         align-self: center;
         width: 50%;
         height: 20%;
