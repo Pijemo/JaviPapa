@@ -1,0 +1,34 @@
+nav{
+    @include flex-row;
+    font-family: "kiona";
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+.enlace {
+    width: 5.5em;
+    height: 3em;
+    text-align: center;
+    
+    a{ 
+        color: black;
+        text-decoration: none;
+        &:active{
+            background-color: grey;
+            text-decoration: none;
+        }
+        &:visited{
+            color: black;
+            text-decoration: none;
+        }
+    }
+}
+span {
+    text-justify: center;
+}
+#logo img {
+    width: 8em;
+    height: 8em;
+}

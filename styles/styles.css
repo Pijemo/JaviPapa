@@ -1,0 +1,253 @@
+@font-face {
+  font-family: "gsans";
+  src: url(../fonts/GeosansLight.ttf);
+}
+@font-face {
+  font-family: "kiona";
+  src: url(../fonts/Kiona-Regular.ttf);
+}
+@font-face {
+  font-family: "quicksand";
+  src: url(../fonts/Quicksand_Book.otf);
+}
+body {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "footer footer footer";
+  grid-template-rows: 10% 80% 10%;
+}
+
+main {
+  grid-area: main;
+  display: grid;
+  grid-template-areas: ". top top top ." "center center center . . " ". bottom bottom bottom . ";
+  grid-template-columns: repeat(5, 20%);
+}
+
+header {
+  grid-area: header;
+}
+
+footer {
+  grid-area: footer;
+}
+
+#top {
+  grid-area: top;
+}
+
+#mid {
+  grid-area: center;
+}
+
+#support {
+  grid-area: bottom;
+}
+
+#fTop {
+  grid-area: fTop;
+}
+
+#fBot {
+  grid-area: fBot;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  font-family: "kiona";
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: large;
+}
+
+.enlace {
+  width: 5.5em;
+  height: 3em;
+  text-align: center;
+}
+.enlace a {
+  color: black;
+  text-decoration: none;
+}
+.enlace a:active {
+  background-color: grey;
+  text-decoration: none;
+}
+.enlace a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+span {
+  text-justify: center;
+}
+
+#logo img {
+  width: 8em;
+  height: 8em;
+}
+
+#top {
+  border: solid black 1px;
+  background-image: url("../img/fondopatatas.jpg");
+  background-size: 100% 150px;
+  color: white;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  height: 50vh;
+  background-size: cover;
+}
+#top div {
+  margin-left: 5%;
+}
+#top div h2 {
+  color: black;
+  font-family: "kiona";
+  font-size: x-large;
+}
+#top div p {
+  width: 20%;
+  font-family: "quicksand";
+  font-size: larger;
+}
+#top button {
+  margin-left: 5%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  border-radius: 10%;
+  font-family: "gsans";
+  font-size: large;
+  background-color: #1897b2;
+}
+
+#mid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  background-repeat: no-repeat;
+}
+#mid #bienvenidos {
+  background-color: #1897b2;
+  margin-left: 10%;
+}
+#mid #bienvenidos h1 {
+  font-family: "gsans";
+}
+#mid #bienvenidos div p {
+  font-family: "quicksand";
+  font-size: large;
+}
+
+#destacados {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #ea7b63;
+}
+
+.producto {
+  border: solid 1px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+.producto figure {
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 70%;
+  height: 60%;
+}
+.producto figure img {
+  width: 12vw;
+  height: 50%;
+}
+.producto figure figcaption {
+  margin-top: 5%;
+  font-size: x-large;
+  text-align: center;
+}
+.producto button {
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 50%;
+  height: 20%;
+  border-radius: 10%;
+  font-family: "gsans";
+  font-size: large;
+}
+
+section > h2 {
+  border-bottom: dotted 0.1em black;
+}
+
+#support {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  font-family: "kiona";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#fTop {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: left;
+  background-color: #e7684d;
+}
+
+#fBot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e55d40;
+}/*# sourceMappingURL=styles.css.map */

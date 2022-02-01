@@ -1,0 +1,13 @@
+@mixin flex-row{
+    display:flex;
+    flex-direction: row;
+    
+}
+@mixin flex-column{
+    display: flex;
+    flex-direction: column;
+}
+@mixin margins{
+    margin-top: 5%;
+    margin-bottom: 5%;
+}

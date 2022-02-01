@@ -1,0 +1,11 @@
+#fTop{
+    @include flex-row;
+    justify-content: space-evenly;
+    text-align: left;
+    background-color: $principal;
+}
+#fBot{
+    @include flex-row;
+    justify-content: center;
+    background-color: darken($principal,3%);
+}
