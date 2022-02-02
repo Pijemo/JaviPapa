@@ -42,7 +42,7 @@
         background-color: lighten($principal,5%);
       
         
-        width: 25vw;
+        width: 30vw;
         h1{
             font-family: "gsans";
         }
@@ -50,12 +50,27 @@
             font-family: "quicksand";
             font-size: large;
         }
+        div button{
+            
+                margin-left: 25%;
+                
+                border-radius: 10%;
+                font-family: "gsans";
+                font-size: large;
+                background-color: $complement;
+                width: 40%;
+                height: 70%;
+            
+        }
     }
     
 }
 #carouselExampleControls{
     margin-right: 10%;
-   
+   .carousel-item img{
+       width: 50%;
+       height: 50%;
+   }
 }
 #destacados{
     @include flex-row;
@@ -69,7 +84,7 @@
     flex-basis: 33%;
     align-content: center;
     figure{
-        align-self: center;
+       align-self: center;
        width: 70%;
        height: 60%;
         img{
@@ -98,7 +113,9 @@ section>h2 {
     border-bottom: dotted 0.1em black;
 }
 #support{
+    
     @include margins;
+    margin-bottom: 15%;
     font-family: 'kiona';
     @include flex-column
 }

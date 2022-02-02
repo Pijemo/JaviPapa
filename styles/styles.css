@@ -93,8 +93,8 @@ span {
   background-image: url("../img/fondopatatas.jpg");
   background-size: 100% 150px;
   color: white;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 15%;
+  margin-bottom: 15%;
   height: 50vh;
   background-size: cover;
 }
@@ -127,14 +127,14 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 15%;
+  margin-bottom: 15%;
   background-repeat: no-repeat;
 }
 #mid #bienvenidos {
   margin-left: 10%;
   background-color: #ea7b63;
-  width: 25vw;
+  width: 30vw;
 }
 #mid #bienvenidos h1 {
   font-family: "gsans";
@@ -143,9 +143,22 @@ span {
   font-family: "quicksand";
   font-size: large;
 }
+#mid #bienvenidos div button {
+  margin-left: 25%;
+  border-radius: 10%;
+  font-family: "gsans";
+  font-size: large;
+  background-color: #1897b2;
+  width: 40%;
+  height: 70%;
+}
 
 #carouselExampleControls {
   margin-right: 10%;
+}
+#carouselExampleControls .carousel-item img {
+  width: 50%;
+  height: 50%;
 }
 
 #destacados {
@@ -190,8 +203,9 @@ section > h2 {
 }
 
 #support {
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 15%;
+  margin-bottom: 15%;
+  margin-bottom: 15%;
   font-family: "kiona";
   display: flex;
   flex-direction: column;
