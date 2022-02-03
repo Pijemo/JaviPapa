@@ -93,8 +93,8 @@ span {
   background-image: url("../img/fondopatatas.jpg");
   background-size: 100% 150px;
   color: white;
-  margin-top: 15%;
-  margin-bottom: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   height: 50vh;
   background-size: cover;
 }
@@ -127,30 +127,37 @@ span {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 15%;
-  margin-bottom: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   background-repeat: no-repeat;
 }
 #mid #bienvenidos {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  border-radius: 3%;
   margin-left: 10%;
   background-color: #ea7b63;
   width: 30vw;
 }
 #mid #bienvenidos h1 {
   font-family: "gsans";
+  text-align: center;
 }
 #mid #bienvenidos div p {
+  text-align: center;
   font-family: "quicksand";
   font-size: large;
 }
 #mid #bienvenidos div button {
-  margin-left: 25%;
+  margin-left: 35%;
   border-radius: 10%;
   font-family: "gsans";
   font-size: large;
   background-color: #1897b2;
-  width: 40%;
-  height: 70%;
+  width: 20%;
+  height: 30%;
 }
 
 #carouselExampleControls {
@@ -164,12 +171,13 @@ span {
 #destacados {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  background-color: #1897b2;
+  justify-content: space-between;
 }
 
 .producto {
+  background-color: #1897b2;
   border: solid 1px black;
+  border-radius: 3%;
   display: flex;
   flex-direction: column;
   flex-basis: 33%;
@@ -203,23 +211,24 @@ section > h2 {
 }
 
 #support {
-  margin-top: 15%;
-  margin-bottom: 15%;
-  margin-bottom: 15%;
+  margin-top: 5%;
+  margin-bottom: 5%;
   font-family: "kiona";
   display: flex;
   flex-direction: column;
 }
 
-#fTop {
+footer {
+  margin-top: 3%;
+}
+footer #fTop {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   text-align: left;
   background-color: #e7684d;
 }
-
-#fBot {
+footer #fBot {
   display: flex;
   flex-direction: row;
   justify-content: center;

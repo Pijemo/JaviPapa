@@ -2,7 +2,6 @@
     border: solid black 1px;
     background-image: url('../img/fondopatatas.jpg');
     background-size: 100% 150px;            
-    
     color: white;
     @include margins;
     height: 50vh;
@@ -33,33 +32,36 @@
     }
 }
 #mid{
+   
     @include flex-row;
     justify-content: space-between;
     @include margins;
     background-repeat: no-repeat;
     #bienvenidos{
+        @include flex-column;
+        align-content: center;
+        justify-content: space-evenly;
+        border-radius: 3%;
         margin-left: 10%;
-        background-color: lighten($principal,5%);
-      
-        
+        background-color: lighten($principal,5%);       
         width: 30vw;
         h1{
             font-family: "gsans";
+            text-align: center;
         }
         div p{
+            text-align: center;
             font-family: "quicksand";
             font-size: large;
         }
-        div button{
-            
-                margin-left: 25%;
-                
+        div button{          
+                margin-left: 35%;
                 border-radius: 10%;
                 font-family: "gsans";
                 font-size: large;
                 background-color: $complement;
-                width: 40%;
-                height: 70%;
+                width: 20%;
+                height: 30%;
             
         }
     }
@@ -74,12 +76,14 @@
 }
 #destacados{
     @include flex-row;
-    justify-content: space-evenly;
-    background-color: $complement;
+    justify-content: space-between;
+    
     
 }
 .producto{
+    background-color: $complement;
     border: solid 1px black;
+    border-radius:3%;
     @include flex-column;
     flex-basis: 33%;
     align-content: center;
@@ -93,13 +97,11 @@
             height: 50%;
         }
         figcaption{
-            
             font-size: x-large;
             text-align: center;
         }
     }
     button{
-        
         align-self: center;
         width: 50%;
         height: 20%;
@@ -113,9 +115,7 @@ section>h2 {
     border-bottom: dotted 0.1em black;
 }
 #support{
-    
     @include margins;
-    margin-bottom: 15%;
     font-family: 'kiona';
     @include flex-column
 }
