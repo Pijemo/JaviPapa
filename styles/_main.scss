@@ -2,15 +2,15 @@
     border: solid black 1px;
     background-image: url('../img/fondopatatas.jpg');
     background-size: 100% 150px;            
-    
     color: white;
     @include margins;
     height: 50vh;
     background-size: cover;
     div{
         margin-left: 5%;
+        margin-top: 5%;
         h2{
-            color: black;
+            color: darken($complement,90%);
             font-family: "kiona";
             font-size: x-large;
         }
@@ -21,81 +21,121 @@
         }
     }
     button{
+        border:none;
         margin-left: 5%;
         align-self: center;
         border-radius: 10%;
         font-family: "gsans";
         font-size: large;
         background-color: $complement;
+        width: 10%;
+        height: 10%;
+        &:hover{
+            @include button-hover($principal);
+        }
     }
 }
 #mid{
+   
     @include flex-row;
     justify-content: space-between;
     @include margins;
     background-repeat: no-repeat;
     #bienvenidos{
+        @include flex-column;
+        align-content: center;
+        justify-content: space-evenly;
+        border-radius: 3%;
         margin-left: 10%;
-        background-color: lighten($principal,5%);
-      
-        
-        width: 25vw;
+        background-color: lighten($principal,5%);       
+        width: 30vw;
         h1{
             font-family: "gsans";
+            text-align: center;
         }
-        div p{
+        div{ 
+            
+            @include flex-column;
+            justify-content: center;
+            align-items: center;
+            p{
+                width: 80%;
+            text-align: center;
             font-family: "quicksand";
             font-size: large;
         }
+             button{          
+                
+                border-radius: 10%;
+                font-family: "gsans";
+                font-size: x-large;
+                background-color: $complement;
+                width: 30%;
+                border: none;
+                &:hover{
+                    @include button-hover($white);
+                }
+        }
+            
+        }
+        
     }
-    figure{
-        margin-right: 10%;
-       img{
-        width:20vw;
-       }
-    }
+    
+}
+#carouselExampleControls{
+    margin-right: 10%;
+   .carousel-item img{
+       width: 50%;
+       height: 50%;
+   }
 }
 #destacados{
     @include flex-row;
-    justify-content: flex-end;
-    background-color: $complement;
+    justify-content: space-between;
+    
     
 }
 .producto{
+    background-color: $complement;
     border: solid 1px black;
+    border-radius:3%;
     @include flex-column;
-    
+    flex-basis: 33%;
     align-content: center;
     figure{
-        align-self: center;
+       align-self: center;
        width: 70%;
        height: 60%;
         img{
-            
+            margin-top: 10%;
             width: 12vw;
             height: 50%;
         }
         figcaption{
-            margin-top: 5%;
             font-size: x-large;
             text-align: center;
         }
     }
     button{
+        border:none;
         align-self: center;
         width: 50%;
         height: 20%;
         border-radius: 10%;
         font-family: "gsans";
         font-size: large;
+        &:hover{
+            @include button-hover($principal);
+        }
     }
+
 }
 
 section>h2 {
     border-bottom: dotted 0.1em black;
 }
 #support{
-    @include margins;
     font-family: 'kiona';
-    @include flex-column
+    @include margins;   
+    @include flex-column;
 }

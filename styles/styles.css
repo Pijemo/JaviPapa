@@ -100,6 +100,7 @@ span {
 }
 #top div {
   margin-left: 5%;
+  margin-top: 5%;
 }
 #top div h2 {
   color: black;
@@ -112,12 +113,19 @@ span {
   font-size: larger;
 }
 #top button {
+  border: none;
   margin-left: 5%;
   align-self: center;
   border-radius: 10%;
   font-family: "gsans";
   font-size: large;
   background-color: #1897b2;
+  width: 10%;
+  height: 10%;
+}
+#top button:hover {
+  background-color: #e7684d;
+  transition: background-color 0.1s ease-in-out;
 }
 
 #mid {
@@ -129,35 +137,65 @@ span {
   background-repeat: no-repeat;
 }
 #mid #bienvenidos {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  border-radius: 3%;
   margin-left: 10%;
   background-color: #ea7b63;
-  width: 25vw;
+  width: 30vw;
 }
 #mid #bienvenidos h1 {
   font-family: "gsans";
+  text-align: center;
+}
+#mid #bienvenidos div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 #mid #bienvenidos div p {
+  width: 80%;
+  text-align: center;
   font-family: "quicksand";
   font-size: large;
 }
-#mid figure {
+#mid #bienvenidos div button {
+  border-radius: 10%;
+  font-family: "gsans";
+  font-size: x-large;
+  background-color: #1897b2;
+  width: 30%;
+  border: none;
+}
+#mid #bienvenidos div button:hover {
+  background-color: whitesmoke;
+  transition: background-color 0.1s ease-in-out;
+}
+
+#carouselExampleControls {
   margin-right: 10%;
 }
-#mid figure img {
-  width: 20vw;
+#carouselExampleControls .carousel-item img {
+  width: 50%;
+  height: 50%;
 }
 
 #destacados {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  background-color: #1897b2;
+  justify-content: space-between;
 }
 
 .producto {
+  background-color: #1897b2;
   border: solid 1px black;
+  border-radius: 3%;
   display: flex;
   flex-direction: column;
+  flex-basis: 33%;
   align-content: center;
 }
 .producto figure {
@@ -166,15 +204,16 @@ span {
   height: 60%;
 }
 .producto figure img {
+  margin-top: 10%;
   width: 12vw;
   height: 50%;
 }
 .producto figure figcaption {
-  margin-top: 5%;
   font-size: x-large;
   text-align: center;
 }
 .producto button {
+  border: none;
   align-self: center;
   width: 50%;
   height: 20%;
@@ -182,28 +221,34 @@ span {
   font-family: "gsans";
   font-size: large;
 }
+.producto button:hover {
+  background-color: #e7684d;
+  transition: background-color 0.1s ease-in-out;
+}
 
 section > h2 {
   border-bottom: dotted 0.1em black;
 }
 
 #support {
+  font-family: "kiona";
   margin-top: 5%;
   margin-bottom: 5%;
-  font-family: "kiona";
   display: flex;
   flex-direction: column;
 }
 
-#fTop {
+footer {
+  margin-top: 3%;
+}
+footer #fTop {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   text-align: left;
   background-color: #e7684d;
 }
-
-#fBot {
+footer #fBot {
   display: flex;
   flex-direction: row;
   justify-content: center;
