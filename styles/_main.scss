@@ -21,6 +21,7 @@
         }
     }
     button{
+        border:none;
         margin-left: 5%;
         align-self: center;
         border-radius: 10%;
@@ -29,6 +30,9 @@
         background-color: $complement;
         width: 10%;
         height: 10%;
+        &:hover{
+            @include button-hover($principal);
+        }
     }
 }
 #mid{
@@ -49,21 +53,32 @@
             font-family: "gsans";
             text-align: center;
         }
-        div p{
+        div{ 
+            
+            @include flex-column;
+            justify-content: center;
+            align-items: center;
+            p{
+                width: 80%;
             text-align: center;
             font-family: "quicksand";
             font-size: large;
         }
-        div button{          
-                margin-left: 35%;
+             button{          
+                
                 border-radius: 10%;
                 font-family: "gsans";
-                font-size: large;
+                font-size: x-large;
                 background-color: $complement;
-                width: 20%;
-                height: 30%;
+                width: 30%;
+                border: none;
+                &:hover{
+                    @include button-hover($white);
+                }
+        }
             
         }
+        
     }
     
 }
@@ -102,20 +117,25 @@
         }
     }
     button{
+        border:none;
         align-self: center;
         width: 50%;
         height: 20%;
         border-radius: 10%;
         font-family: "gsans";
         font-size: large;
+        &:hover{
+            @include button-hover($principal);
+        }
     }
+
 }
 
 section>h2 {
     border-bottom: dotted 0.1em black;
 }
 #support{
-    @include margins;
     font-family: 'kiona';
-    @include flex-column
+    @include margins;   
+    @include flex-column;
 }

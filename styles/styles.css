@@ -113,6 +113,7 @@ span {
   font-size: larger;
 }
 #top button {
+  border: none;
   margin-left: 5%;
   align-self: center;
   border-radius: 10%;
@@ -121,6 +122,10 @@ span {
   background-color: #1897b2;
   width: 10%;
   height: 10%;
+}
+#top button:hover {
+  background-color: #e7684d;
+  transition: background-color 0.1s ease-in-out;
 }
 
 #mid {
@@ -145,19 +150,29 @@ span {
   font-family: "gsans";
   text-align: center;
 }
+#mid #bienvenidos div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 #mid #bienvenidos div p {
+  width: 80%;
   text-align: center;
   font-family: "quicksand";
   font-size: large;
 }
 #mid #bienvenidos div button {
-  margin-left: 35%;
   border-radius: 10%;
   font-family: "gsans";
-  font-size: large;
+  font-size: x-large;
   background-color: #1897b2;
-  width: 20%;
-  height: 30%;
+  width: 30%;
+  border: none;
+}
+#mid #bienvenidos div button:hover {
+  background-color: whitesmoke;
+  transition: background-color 0.1s ease-in-out;
 }
 
 #carouselExampleControls {
@@ -198,6 +213,7 @@ span {
   text-align: center;
 }
 .producto button {
+  border: none;
   align-self: center;
   width: 50%;
   height: 20%;
@@ -205,15 +221,19 @@ span {
   font-family: "gsans";
   font-size: large;
 }
+.producto button:hover {
+  background-color: #e7684d;
+  transition: background-color 0.1s ease-in-out;
+}
 
 section > h2 {
   border-bottom: dotted 0.1em black;
 }
 
 #support {
+  font-family: "kiona";
   margin-top: 5%;
   margin-bottom: 5%;
-  font-family: "kiona";
   display: flex;
   flex-direction: column;
 }

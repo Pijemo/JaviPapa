@@ -11,3 +11,8 @@
     margin-top: 5%;
     margin-bottom: 5%;
 }
+@mixin button-hover($color){
+    
+    background-color: $color;    
+    transition: background-color 0.1s ease-in-out;
+}
