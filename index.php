@@ -19,7 +19,7 @@
             <div class="enlace"><a href="carta.html">Carta</a></div>
             <div class="enlace"><a href="contacto.html">Contacto</a></div>
             <div class="enlace"><a href="iniciarsesion.html">Iniciar sesión</a></div>
-            <div class="enlace"><a href="registro.html">Registrarse</a></div>
+            <div class="enlace"><a href="registro.php">Registrarse</a></div>
         </nav>
     </header>
     <main>
