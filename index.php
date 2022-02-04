@@ -7,20 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Panda la Papa</title>
     <link rel="stylesheet" href="bootstrap5/css/bootstrap.css">
-    <link rel="stylesheet" href="styles/index/styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
     <header class="cabecera">
-        <nav>
-            <div id="logo"><img src="img/logo2.png" alt="logo"></div>
-            <div class="enlace"><a href="index.html">Inicio</a></div>
-            <div class="enlace"><a href="nosotros.html">Sobre nosotros</a></div>
-            <div class="enlace"><a href="carta.html">Carta</a></div>
-            <div class="enlace"><a href="contacto.html">Contacto</a></div>
-            <div class="enlace"><a href="iniciarsesion.html">Iniciar sesión</a></div>
-            <div class="enlace"><a href="registro.php">Registrarse</a></div>
-        </nav>
+        <script src="script.js/script.js">
+            crearHeader();
+        </script>
     </header>
     <main>
         <section id="top">
