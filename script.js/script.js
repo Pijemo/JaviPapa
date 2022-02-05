@@ -41,12 +41,12 @@ const crearHeader = () => {
                 break;
             case 4:
                 let txtIniciarsesion = document.createTextNode("Iniciar sesión");
-                misEnlaces[4].setAttribute("href", "iniciarsesion.html");
+                misEnlaces[4].setAttribute("href", "iniciarsesion.php");
                 misEnlaces[4].append(txtIniciarsesion);
                 break;
             case 5:
                 let txtRegistro = document.createTextNode("Registro");
-                misEnlaces[5].setAttribute("href", "registro.html");
+                misEnlaces[5].setAttribute("href", "registro.php");
                 misEnlaces[5].append(txtRegistro);
                 break;
         }

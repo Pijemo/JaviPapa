@@ -4,6 +4,7 @@ if(isset($_POST["enviar"])){
     $bd=new BD("mysql:dbname=papas;host=localhost", "root", "");
     $bd->loadBD();
     $bd->addUser($_POST["mail"],$_POST["pass"],$_POST["repass"],$_POST["nombre"],$_POST["ape"],$_POST["nac"],$_POST["sexo"],0);
+    $bd->closeBD();
 }
 
 
@@ -43,7 +44,7 @@ if(isset($_POST["enviar"])){
             <label>Sexo:</label>
             <label>Hombre</label><input type="radio" name="sexo" value="H">
             <label>Mujer</label><input type="radio" name="sexo" value="M">
-            <label>Otro:</label><input type="text" name="sexo">
+            <label>Otro</label><input type="radio" name="sexo">
             <input type="submit" value="enviar" name="enviar">
         </form>
     </main>
