@@ -3,14 +3,16 @@
        display: none;
     }
     nav{
-        @include flex-column;
+        @include flex-column;        
         font-family: "kiona";
-        justify-content: space-evenly;
+        justify-content: space-evenly;             
         
+        align-content: center;
+        align-items: center;
         font-size: large;
-    }
+    }    
     
-    .enlace {
+    .enlaceMovil {
         width: 5.5em;
         height: 3em;
         text-align: center;
@@ -32,8 +34,6 @@
     span {
         text-justify: center;
     }
-    
-    
 }
 
 
@@ -72,5 +72,6 @@
         width: 8em;
         height: 8em;
     }
+    
     
 }
