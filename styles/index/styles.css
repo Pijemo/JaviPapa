@@ -72,10 +72,17 @@ footer {
   }
 
   nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     font-family: "kiona";
-    justify-content: space-evenly;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     font-size: large;
   }
 
@@ -104,12 +111,22 @@ footer {
 }
 @media screen and (min-width: 1300px) {
   nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     font-family: "kiona";
-    justify-content: space-evenly;
-    align-content: center;
-    align-items: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: large;
   }
 
@@ -147,16 +164,30 @@ footer {
     height: 50vh;
     width: 90%;
     justify-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   #top div {
     width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
   #top div h2 {
     color: black;
@@ -172,7 +203,8 @@ footer {
   }
   #top button {
     border: none;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     width: 50%;
     height: 20%;
     border-radius: 10%;
@@ -182,19 +214,34 @@ footer {
   }
 
   #mid {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-top: 5%;
     margin-bottom: 5%;
     height: 50vh;
     width: 100%;
   }
   #mid #bienvenidos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     border-radius: 3%;
     background-color: #ea7b63;
     width: 90%;
@@ -204,10 +251,19 @@ footer {
     text-align: center;
   }
   #mid #bienvenidos div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #mid #bienvenidos div p {
     width: 80%;
@@ -228,22 +284,37 @@ footer {
   }
 
   #destacados {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .producto {
     background-color: #1897b2;
     border: solid 1px black;
     border-radius: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-basis: 33%;
-    align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
   .producto figure {
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     width: 90%;
     height: 60%;
   }
@@ -259,7 +330,8 @@ footer {
   .producto button {
     border: none;
     margin-top: 5%;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     width: 50%;
     height: 20%;
     border-radius: 10%;
@@ -268,6 +340,7 @@ footer {
   }
   .producto button:hover {
     background-color: #e7684d;
+    -webkit-transition: background-color 0.1s ease-in-out;
     transition: background-color 0.1s ease-in-out;
   }
 
@@ -281,8 +354,13 @@ footer {
     font-family: "kiona";
     margin-top: 5%;
     margin-bottom: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 @media screen and (min-width: 1300px) {
@@ -313,7 +391,8 @@ footer {
   #top button {
     border: none;
     margin-left: 5%;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     border-radius: 10%;
     font-family: "gsans";
     font-size: large;
@@ -323,22 +402,38 @@ footer {
   }
   #top button:hover {
     background-color: #e7684d;
+    -webkit-transition: background-color 0.1s ease-in-out;
     transition: background-color 0.1s ease-in-out;
   }
 
   #mid {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     margin-top: 5%;
     margin-bottom: 5%;
     background-repeat: no-repeat;
   }
   #mid #bienvenidos {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: space-evenly;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     border-radius: 3%;
     margin-left: 10%;
     background-color: #ea7b63;
@@ -350,10 +445,19 @@ footer {
     text-align: center;
   }
   #mid #bienvenidos div {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   #mid #bienvenidos div p {
     width: 80%;
@@ -371,6 +475,7 @@ footer {
   }
   #mid #bienvenidos div button:hover {
     background-color: whitesmoke;
+    -webkit-transition: background-color 0.1s ease-in-out;
     transition: background-color 0.1s ease-in-out;
   }
 
@@ -383,22 +488,37 @@ footer {
   }
 
   #destacados {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .producto {
     background-color: #1897b2;
     border: solid 1px black;
     border-radius: 3%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-basis: 33%;
-    align-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-preferred-size: 33%;
+        flex-basis: 33%;
+    -ms-flex-line-pack: center;
+        align-content: center;
   }
   .producto figure {
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     width: 70%;
     height: 60%;
   }
@@ -413,7 +533,8 @@ footer {
   }
   .producto button {
     border: none;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     width: 50%;
     height: 20%;
     border-radius: 10%;
@@ -422,6 +543,7 @@ footer {
   }
   .producto button:hover {
     background-color: #e7684d;
+    -webkit-transition: background-color 0.1s ease-in-out;
     transition: background-color 0.1s ease-in-out;
   }
 
@@ -433,10 +555,19 @@ footer {
     font-family: "kiona";
     margin-top: 5%;
     margin-bottom: 5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
+form {
+  margin: 20%;
+}
+
 @media screen and (min-width: 360px) and (max-width: 1300px) {
   footer {
     margin-top: 3%;
@@ -445,9 +576,16 @@ footer {
     display: none;
   }
   footer #fBot {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: #e55d40;
   }
 }
@@ -456,16 +594,30 @@ footer {
     margin-top: 3%;
   }
   footer #fTop {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
     text-align: left;
     background-color: #e7684d;
   }
   footer #fBot {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     background-color: #e55d40;
   }
 }/*# sourceMappingURL=styles.css.map */
